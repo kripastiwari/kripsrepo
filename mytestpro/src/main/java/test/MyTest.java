@@ -5,13 +5,15 @@ import java.util.Scanner;
 public class MyTest {
 
 	public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);
+		
+		int input=0;
+		try(Scanner in = new Scanner(System.in);){
 		System.out.println("Inter a number");
 
 		// String str= in.nextLine();
 
-		int input = in.nextInt();
-
+		input = in.nextInt();
+		}
 		MyTest primeTest = new MyTest();
 
 		if (input < 2) {
